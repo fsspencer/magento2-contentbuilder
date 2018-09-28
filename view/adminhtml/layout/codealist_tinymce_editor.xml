@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * @category    Codealist
+ * @package     ContentBuilder
+ * @copyright   Copyright (c) 2018 Codealist
+ */
+-->
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <head>
+        <css src="Codealist_ContentBuilder::lib/contentbuilder/contentbuilder.css"/>
+        <css src="Codealist_ContentBuilder::lib/contentbuilder/assets/icons/css/fontello.css"/>
+        <css src="Codealist_ContentBuilder::lib/contentbuilder/assets/ionicons/css/ionicons.css"/>
+    </head>
+    <body>
+        <referenceContainer name="before.body.end">
+            <block ifconfig="codealist_contentbuilder/general/active"
+                   class="Codealist\ContentBuilder\Block\Editor"
+                   name="codealist.contentbuilder.editor"
+                   template="Codealist_ContentBuilder::editor.phtml" />
+        </referenceContainer>
+    </body>
+</page>

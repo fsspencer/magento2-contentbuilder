@@ -1,0 +1,20 @@
+// /**
+//  * @category    Codealist
+//  * @package     ContentBuilder
+//  * @copyright   Copyright (c) 2018 Codealist
+//  */
+
+& when (@media-common = true) {
+    #maincontent .elements-block {
+        font-size: 100%;
+        line-height: 2;
+        font-weight: 300;
+
+        &.row:not(tr) {
+            margin-left:0;
+            margin-right:0;
+        }
+
+        @import (less) "../elements.css";
+    }
+}

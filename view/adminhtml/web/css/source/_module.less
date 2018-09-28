@@ -1,0 +1,137 @@
+// /**
+//  * @category    Codealist
+//  * @package     ContentBuilder
+//  * @copyright   Copyright (c) 2018 Codealist
+//  */
+
+@import url('//fonts.googleapis.com/css?family=Open+Sans:300,400,600,800');
+
+.elements-editor-modal {
+
+    .modal-inner-wrap {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        margin: 3rem;
+        width: auto;
+    }
+
+    .modal-header {
+        height: 8rem;
+
+        .action-close {
+            display: none;
+        }
+    }
+
+    .modal-content {
+        overflow-y: scroll;
+        position: absolute;
+        top: 8rem;
+        bottom: 0;
+        right: 260px;
+        left: 0;
+        padding: 3rem 5rem;
+        border-top: solid 1px #dedede;
+    }
+
+    .modal-footer {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        padding: 0 2rem 2rem 2rem;
+        width: 260px;
+        text-align: left;
+        z-index: 10002;
+
+        .action {
+            min-width: 9rem;
+        }
+
+        .action.secondary {
+            margin-right: 1rem;
+        }
+    }
+
+    .elements-editor-content {
+        margin: 0;
+        font-family: "Open Sans", sans-serif;
+        font-size: 100%;
+        line-height: 2;
+        font-weight: 300;
+
+        @import (less) "../elements.css";
+    }
+
+    #divTool {
+        padding: 2rem 1rem 6rem 1rem;
+    }
+
+    #selSnips {
+        padding: 5px;
+        font-size: 12px;
+        letter-spacing: 1px;
+        height: 28px;
+        line-height: 1;
+        color: #454545;
+        border-radius: 0;
+        border: none;
+        background: #fff;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+        cursor: pointer;
+        width: 20rem;
+        margin: 0 .8rem 1rem;
+    }
+
+    #divSnippetList {
+        position: absolute;
+        top: 6rem;
+        bottom: 7rem;
+        left: 1.5rem;
+        right: 1.5rem;
+        width: auto;
+        height: auto;
+        padding: 0 0.5rem;
+    }
+
+    #rte-toolbar {
+        top: 1rem;
+        right: 280px;
+        left: auto;
+        width: auto;
+        text-align: right;
+        display: block !important;  // override broken always display mode in the content builder lib
+    }
+
+    #divToolImg,
+    #divToolImgSettings,
+    #divFrameLink,
+    #divRteLink {
+        position: fixed;
+    }
+
+    .elements-editor .tempWidget {
+        background-color: darken(@color-gray98, 1%);
+        p {
+            font-size: 12px;
+        }
+
+        img {
+            position: relative;
+            top: 5px;
+            margin: auto;
+        }
+    }
+
+    .elements-editor-modal .elements-editor-content img {
+        width: 100%;
+    }
+}
+
+@media all and (max-width: 1135px) {
+    .elements-editor-modal {
+        .modal-title {
+            display: none;
+        }
+    }
+}

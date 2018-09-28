@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * @category    Codealist
+ * @package     ContentBuilder
+ * @copyright   Copyright (c) 2018 Codealist
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <preference for="Magento\Framework\Data\Form\Element\Editor" type="Codealist\ContentBuilder\Model\Data\Form\Element\Editor" />
+</config>

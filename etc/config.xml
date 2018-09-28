@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * @category    Codealist
+ * @package     ContentBuilder
+ * @copyright   Copyright (c) 2018 Codealist
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
+    <default>
+        <codealist_contentbuilder>
+            <general>
+                <active>1</active>
+            </general>
+        </codealist_contentbuilder>
+    </default>
+</config>

@@ -1,0 +1,27 @@
+<?php
+/**
+ * @category    Codealist
+ * @package     ContentBuilder
+ * @copyright   Copyright (c) 2018 Codealist
+ */
+?>
+<?php /* @var $block Codealist\ContentBuilder\Block\Editor */ ?>
+
+<div class="elements-editor" data-mage-init='{"Codealist_ContentBuilder/js/editor": {
+    "directiveUrl": "<?= $block->getUrl('cms/wysiwyg/directive') ?>",
+    "filesBrowserUrl": "<?= $block->getUrl('cms/wysiwyg_images/index') ?>",
+    "widgetNames": <?= $block->getWidgetNames() ?>,
+    "placeholderUrl": "<?= $block->getViewFileUrl('Codealist_ContentBuilder/images/widget_placeholder.gif'); ?>"
+}}'>
+
+    <div id="elements_editor_content" class="elements-editor-content"></div>
+
+    <?php // content builder controls // ?>
+    <div id="divCb">
+        <div id="divSnippets" style="display:none;"><!-- Hidden content rendered via JS --></div>
+        <div id="divTool">
+            <select id="selSnips"><!-- Options inserted via JS --></select>
+            <div id="divSnippetList"></div>
+        </div>
+    </div>
+</div>

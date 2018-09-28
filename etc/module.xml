@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * @category    Codealist
+ * @package     ContentBuilder
+ * @copyright   Copyright (c) 2018 Codealist
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Module/etc/module.xsd">
+    <module name="Codealist_ContentBuilder" setup_version="1.0.0">
+        <sequence>
+            <module name="Magento_Cms" />
+            <module name="Codealist_Base" />
+        </sequence>
+    </module>
+</config>
