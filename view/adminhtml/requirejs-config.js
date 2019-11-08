@@ -5,11 +5,6 @@
  */
 
 var config = {
-    map: {
-        '*': {
-            'Codealist_ContentBuilder::contentbuilder': 'Codealist_ContentBuilder/lib/contentbuilder/contentbuilder-src'
-        }
-    },
     shim: {
         'jquery/jstree/jquery.jstree': {
             deps: ['Codealist_ContentBuilder/js/editor']

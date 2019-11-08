@@ -9,7 +9,7 @@ define([
     'underscore',
     'jquery/jstree/jquery.hotkeys',     // need this to load before we execute fix for jstree hotkeys
     'Magento_Ui/js/modal/modal',
-    'Codealist_ContentBuilder::contentbuilder',
+    'Codealist_ContentBuilder/lib/contentbuilder/contentbuilder-src',
     'Codealist_ContentBuilder/js/contentbuilder-overrides'
 ], function ($, _) {
     'use strict';
